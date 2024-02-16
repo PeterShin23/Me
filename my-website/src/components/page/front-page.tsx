@@ -38,19 +38,19 @@ const SideNavBar: React.FC<SideNavBarProps> = (props: SideNavBarProps) => {
     )
 };
 
-export const FrontPage = () => {
+// export const FrontPage = () => {
 
-    return (
-        <div className="flex justify-center items-center text-blue-300">
-            Hello World
-        </div>
-        // <div className="container">
-        //     <WelcomePage />
-        //     <ExperiencesPage />
-        //     <ProjectsPage />
-        // </div>
-    )
-}
+//     return (
+//         <div className="flex justify-center items-center text-blue-300">
+//             Hello World
+//         </div>
+//         // <div className="container">
+//         //     <WelcomePage />
+//         //     <ExperiencesPage />
+//         //     <ProjectsPage />
+//         // </div>
+//     )
+// }
 
 // const welcomeStyle = {
 //     backgroundColor: 'rgb(146 64 14)',

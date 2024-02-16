@@ -1,34 +1,105 @@
 import * as React from 'react';
 
 import { Colors } from '../../../utils/colors'
+import github from '../../../static/github.svg'
+import linkedin from '../../../static/linkedin.svg'
 
 export const WelcomePage = () => {
     
     return (
-        <div style={welcomeStyles.pageStyle}>
-            <div style={welcomeStyles.cardStyle}>
-                <p style={welcomeStyles.cardTextStyle}>
-                    hello, my name is Peter Shin, and one of my goals of 2023 was to create my own website
-                    to do whatever I wanted.
-                </p>
-                <p style={welcomeStyles.cardTextStyle}>
-                    So here it is!
-                </p>
-                <p style={welcomeStyles.cardTextStyle}>
-                    I was born in South Korea, and my family moved to the United States when I was young.
-                    I graduated from the University of Virginia with a B.Sc. in Computer Science and a minor
-                    in Data Science.
-                </p>
-                <p style={welcomeStyles.cardTextStyle}>
-                    Now, I work a full-time job as a software engineer. I try not to let laziness get between
-                    myself and things that I think are/would be fun. But it happens, lol. This website is one 
-                    attempt to actually put money where my mouth is.
-                </p>
-                <p style={welcomeStyles.cardTextStyle}>
-                    Most of my hobbies are related to things that I don't have a drive to make money with.
-                    Photography, hiking, music, reading, writing, going to the gym, cooking, traveling, etc.
-                    So I document it instead.
-                </p>
+        <div className="container flex flex-row max-w-full h-screen" style={{backgroundColor: Colors.TeaGreen, minWidth: '712px'}}>
+            <div className="flex flex-col w-1/2 justify-center">
+                <div className="flex flex-row justify-center text-7xl font-bold font-sans">
+                    <div className="text-slate-200">
+                        Peter 
+                    </div>
+                    <div className="text-slate-500">
+                        Shin 
+                    </div>
+                </div>
+                <div className="flex flex-row justify-center items-center ">
+                    {/* add a copy to clipboard feature with a toast message*/}
+                    {/* https://www.npmjs.com/package/react-copy-to-clipboard */}
+                    <div className="pr-2 font-medium text-slate-700">
+                        psshin.work@gmail.com
+                    </div>
+                    <a className="pl-2 font-medium text-slate-700 hover:underline" href="https://www.linkedin.com/in/petershin23/" target="_blank" rel="noreferrer">
+                        {/* LinkedIn icon by Icons8 */}
+                        <img className="w-16 h-16" src={linkedin} />
+                    </a>
+                    <a className="pl-2 font-medium text-slate-700 hover:underline" href="https://github.com/PeterShin23" target="_blank" rel="noreferrer">
+                        {/* Github icon by Icons8 */}
+                        <img className="w-16 h-16" src={github} />
+                    </a>
+                </div>
+            </div>
+            <div className="flex flex-col w-1/2 justify-center p-8">
+                {/* Experiences */}
+                {/* skills */}
+                {/* hobbies */}
+                <div className="flex flex-col font-sans">
+                    <div className="pb-2">
+                        <div className="text-slate-200 text-4xl font-bold">
+                            Experiences
+                        </div>
+                        <div className="px-2">
+                            <div>
+                                <p className="text-slate-700 text-2xl font-semibold"> 
+                                    Costar Group - Associate Software Engineer
+                                </p>
+                                <p className="text-slate-700 text-base font-medium">
+                                    &nbsp;&nbsp;- Need a good description here
+                                </p>
+                            </div>
+                            <div>
+                                <p className="text-slate-700 text-2xl font-semibold"> 
+                                    Amazon Web Services - SDE Intern
+                                </p>
+                                <p className="text-slate-700 text-base font-medium">
+                                    &nbsp;&nbsp;- Need a good description here
+                                </p>
+                            </div>
+                            <div>
+                                <p className="text-slate-700 text-2xl font-semibold"> 
+                                    UVA Computer Science TA
+                                </p>
+                                <p className="text-slate-700 text-base font-medium">
+                                    &nbsp;&nbsp;- Need a good description here
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="pb-2">
+                        <div className="text-slate-200 text-4xl font-bold">
+                            Skills
+                        </div>
+                        <div className="px-2">
+                            <p className="text-slate-700 text-base font-medium">
+                                Python, TypeScript, C#/.NET, SQL, Java, ElasticSearch 
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div className="text-slate-200 text-4xl font-bold">
+                            Hobbies
+                        </div>
+                        <div className="px-2">
+                            <p className="text-slate-700 text-base font-medium">
+                                I like to hit the gym, but I'm always injured.
+                                <br />
+                                I like to play basketball, but my shot is broken.
+                                <br />
+                                I like photography, but I mostly take pictures of family.
+                                <br />
+                                I like cooking, but half the time, it doesn't taste that good.
+                                <br />
+                                But I like doing them, so I do them. :)
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     )
