@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Colors } from '../../utils/colors'
+import { Colors } from '../../../utils/colors'
 
 export const WelcomePage = () => {
     
@@ -51,16 +51,4 @@ const welcomeStyles = {
         textAlign: 'left' as 'left', // textAlign type has to be cast to more specific type for some reason
         margin: '0.5rem'
     }
-}
-// const pageStyle = {
-//     backgroundColor: Colors.AshGray,
-//     padding: '1rem',
-//     width: '100%',
-//     height: '100vh', // 100 view port height
-// }
-
-// const welcomeCardStyle = {
-//     width: '40vh',
-//     boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-//     backgroundColor: Colors.Parchment,
-// }
+};

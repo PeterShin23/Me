@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Colors } from '../../utils/colors'
+import { Colors } from '../../../utils/colors'
 
 export const ProjectsPage = () => {
     

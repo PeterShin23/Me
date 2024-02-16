@@ -41,11 +41,14 @@ const SideNavBar: React.FC<SideNavBarProps> = (props: SideNavBarProps) => {
 export const FrontPage = () => {
 
     return (
-        <div className="container">
-            <WelcomePage />
-            <ExperiencesPage />
-            <ProjectsPage />
+        <div className="flex justify-center items-center text-blue-300">
+            Hello World
         </div>
+        // <div className="container">
+        //     <WelcomePage />
+        //     <ExperiencesPage />
+        //     <ProjectsPage />
+        // </div>
     )
 }
 
