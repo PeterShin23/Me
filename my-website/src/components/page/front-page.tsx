@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import * as React from 'react';
 
-import {ExperiencesPage, ProjectsPage, WelcomePage} from './front-page-components/index';
+// import {ExperiencesPage, ProjectsPage, WelcomePage} from './front-page-components/index';
 
 /** Props for side nav bar on the welcome page */
 type SideNavBarProps = {
